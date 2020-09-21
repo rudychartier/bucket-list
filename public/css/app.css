@@ -1,0 +1,30 @@
+
+body {
+    background-image: url("../img/bruno-emmanuelle-BaJQYjipe6o-unsplash.jpg");
+    background-color: white;
+
+    background-repeat: no-repeat;
+
+
+
+    font-family: "Lobster";
+}
+footer{
+    font-family: "Lobster";
+}
+.flash{
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+    color: white;
+}
+
+.flash-error{
+    background-color: #C82829;
+}
+.flash-success{
+    background-color: #aacd4e;
+}
+.container{
+    position: center;
+}

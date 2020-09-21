@@ -1,0 +1,26 @@
+{% extends 'layout.html.twig' %}
+{% block title %}
+    Liste des idées
+{% endblock %}
+{% block main %}
+
+
+                {% for detail in bucket_list  %}
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="{{ path('detail_idea',{'id':detail.id}) }}">{{ detail.title}} dans catégorie : {{ detail.category }}</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                {% endfor %}
+    <ul>
+
+
+        <li><a href="{{ path('ajout_idees_idea') }}">Vous pouvez ajouter une idée à notre liste en cliquant ici !</a></li>
+
+        </li>
+    </ul>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'layout.html.twig' %}
+{% block title %}
+    Ajout d'idées
+{% endblock %}
+{% block main %}
+    <h2>C'est à vous maintenant! Ajouter votre idée !</h2>
+{{ form_start(ideaForm) }}
+{{ form_widget(ideaForm) }}
+
+    <button type='submit' class="btn btn-primary">Ajouter !</button>
+{{ form_end(ideaForm) }}
+
+
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'layout.html.twig' %}
+{% block title%}
+    Détail des idées
+{% endblock %}
+{% block main %}
+<h2>Détails</h2>
+    <div>{{ detail.category }}</div>
+    <div>{{ detail.title }}</div>
+    <div>{{ detail.description}}</div>
+    <div>{{ detail.author }}</div>
+    <div>{{ detail.dateCreated|date }}</div>
+    <ul>
+        <li><a href="{{ path('list_idea') }}">Retour vers la liste !</a></li>
+    </ul>
+{% endblock %}
+

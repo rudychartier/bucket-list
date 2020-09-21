@@ -1,0 +1,18 @@
+<nav>
+    <ul>
+        {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+        <div>Bonjour {{ user.username }}!</div>
+        <li><a href="https://github.com/fabianalexisinostroza/Antu">Page d'accuei!</a>
+        <li><a href="{{ path('list_idea') }}">Voici notre liste d'idées !</a>
+        <li><a href="{{ path('ajout_idees_idea') }}">Vous pouvez ajouter une idée en cliquant ici !</a>
+        <li><a href="{{ path('logout') }}">Déconnexion!</a>
+        </li>
+        </li>
+        </li>
+        </li>
+        {% else %}
+        <li><a href="{{ path('login') }}">Se connecter !</a>
+        {% endif %}
+    </ul>
+</nav>
+
